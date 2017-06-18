@@ -1,0 +1,116 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul, li {
+  list-style: none;
+}
+
+#container {
+  width: 100vw;
+}
+
+main {
+  display: flex;
+  text-align: center;
+  flex-flow: column wrap;
+  max-width: 76%;
+  margin: 0 auto;
+}
+
+form {
+  text-align: left;
+  width: 66%;
+  margin: 0 auto;
+}
+
+.h2-class {
+  margin: 2em 0 0 0;
+}
+
+#difficulty {
+  height: 2em;
+  width: 12em;
+  margin-left: .850em;
+}
+
+.member-name {
+  text-align: left;
+  color: white;
+  background-color: #434447;
+  padding: 1em 2em;
+  margin: 2em 0 0 0;
+}
+
+.member-name:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.member-name input {
+  font-size: 1em;
+  float: left;
+  width: 75%;
+  padding: .750em;
+  border: none;
+}
+
+input[type="radio"] {
+  margin-left: .5em;
+  margin-right: 1em;
+}
+
+label[for="cleric"] {
+  margin-right: 1.6em;
+}
+
+label[for="paladin"] {
+  margin-right: 1.6em;
+}
+
+label[for="rogue"] {
+  margin-right: 1.6em;
+}
+
+label[for="ranger"] {
+  margin-right: 1.6em;
+}
+
+label[for="fighter"] {
+  margin-right: 1.6em;
+}
+
+label[for="wizard"] {
+  margin-right: 1.6em;
+}
+.addBtn {
+  font-size: 1em;
+  text-align: center;
+  width: 25%;
+  color: #555;
+  float: left;
+  background: #d9d9d9;
+  padding: .750em;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+
+#team-list {
+  font-size: 1.2em;
+  margin-top: 1.2em;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}

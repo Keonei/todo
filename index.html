@@ -3,78 +3,55 @@
   <head>
     <meta charset="utf-8">
     <title>TODO App</title>
-    <style type="text/css">
-
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">"
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
-    <h1>Choose your Simulation</h1>
-    <form>
-      <label>Select Level:
-        <select name="difficulty" id="difficulty">
-          <option value="easy">Easy Peasy!</option>
-          <option value="normal">Blah</option>
-          <option value="challenging">Alrighty Then</option>
-          <option value="hard">Rough</option>
-          <option value="stop">Please Stop</option>
-          <option value="nope">No.</option>
-        </select>
+    <div id="container">
+      <main>
+        <h1>Who's Meeting you in the Tavern...</h1>
+        <form>
+          <label for="difficulty">Select Difficulty:
+            <select name="difficulty" id="difficulty">
+              <option value="easy">Easy Peasy!</option>
+              <option value="normal">Blah</option>
+              <option value="challenging">Alrighty Then</option>
+              <option value="hard">Rough</option>
+              <option value="stop">Please Stop</option>
+              <option value="nope">No.</option>
+            </select>
+          </label>
+          <p><span class="h2-class">Class</span></p>
+          <label for="cleric">
+            <input type="radio" name="class" value="true">Cleric
+          </label>
+          <label for="paladin">
+            <input type="radio" name="class" value="false">Paladin
+          </label>
+          <label for="rogue">
+            <input type="radio" name="class" value="false">Rogue
+          </label>
+          <label for="ranger">
+            <input type="radio" name="class" value="false">Ranger
+          </label>
+          <label for="fighter">
+            <input type="radio" name="class" value="false">Fighter
+          </label>
+          <label for="wizard">
+            <input type="radio" name="class" value="false">Wizard
+          </label>
+            <div class="member-name">
+              <h2>Who is this in your Fellowship:</h2>
+              <label>
+                <input type="name" id="teamMember" placeholder="Name">
+              </label>
+            <button class="addBtn" onclick="addName()">Add</button>
+          </div>
+        </form>
 
-      <legend>Select your 3 Persons for your Team:</legend>
-      <label>
-        <input type="checkbox" name="team-member">Talbot
-      </label>
-      <label>
-        <input type="checkbox" name="team-member">Pete
-      </label>
-      <label>
-        <input type="checkbox" name="team-member">Jesse
-      </label>
-      <label>
-        <input type="checkbox" name="team-member">Blake
-      </label>
-      <label>
-        <input type="checkbox" name="team-member">James
-      </label>
-      <label>
-        <input type="checkbox" name="team-member">Kerry
-      </label>
-
-      <legend>Matchmaking?</legend>
-      <label>
-        <input type="radio" name="yes">Sure
-      </label>
-      <label>
-        <input type="radio" name="yes">Nah
-      </label>
-
-      <fieldset>
-        <label>Emergency Contanct:
-          <input type="text" name="emergency-contact" placeholder="Full Name">
-        </label>
-        <label>Telephone:
-          <input type="text" name="phone-number" placeholder="xxx-xxx-xxxx">
-        </label>
-        <label>Comments and Restrictions:
-          <textarea name="comments"></textarea>
-        </label>
-      </fieldset>
-
-      <input type="submit" name="submit" value="Submit">
-    </form>
-
-    <div class="confirm">
-      <h2></h2>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+        <div id="team-list"></div>
+      </main>
     </div>
-    <script>
-
-    </script>
   </body>
 </html>
