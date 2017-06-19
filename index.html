@@ -3,9 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>TODO App</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">"
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
@@ -25,27 +24,27 @@
           </label>
           <p><span class="h2-class">Class</span></p>
           <label for="cleric">
-            <input type="radio" name="class" value="true">Cleric
+            <input type="radio" id="cleric" name="class" value="true">Cleric
           </label>
           <label for="paladin">
-            <input type="radio" name="class" value="false">Paladin
+            <input type="radio" id="paladin" name="class" value="false">Paladin
           </label>
           <label for="rogue">
-            <input type="radio" name="class" value="false">Rogue
+            <input type="radio" id="rogue" name="class" value="false">Rogue
           </label>
           <label for="ranger">
-            <input type="radio" name="class" value="false">Ranger
+            <input type="radio" id="ranger" name="class" value="false">Ranger
           </label>
           <label for="fighter">
-            <input type="radio" name="class" value="false">Fighter
+            <input type="radio" id="fighter" name="class" value="false">Fighter
           </label>
           <label for="wizard">
-            <input type="radio" name="class" value="false">Wizard
+            <input type="radio" id="wizard" name="class" value="false">Wizard
           </label>
             <div class="member-name">
               <h2>Who is this in your Fellowship:</h2>
               <label>
-                <input type="name" id="teamMember" placeholder="Name">
+                <input type="text" id="teamMember" name="name" placeholder="Name">
               </label>
             <button class="addBtn" onclick="addName()">Add</button>
           </div>
@@ -54,5 +53,6 @@
         <div id="team-list"></div>
       </main>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </body>
 </html>
