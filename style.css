@@ -10,22 +10,44 @@ ul, li {
   list-style: none;
 }
 
+h1 {
+ font-family: 'Niconne', cursive;
+ font-size: 2.8em;
+ letter-spacing: .03em;
+ border-bottom: solid .03em grey;
+ padding-bottom: .5em;
+}
+
 #container {
+  background-color: black;
+  background-image: url(images/dragon.jpg);
+  background-attachment: fixed;
+  background-size: inherit;
+  background-position: right;
+  background-repeat: no-repeat;
   width: 100vw;
 }
 
+@media screen and (max-width: 1135px) {
+  #container {
+    background-color: black;
+    background-image: none;
+  }
+}
+
 main {
+  background-color: silver;
   display: flex;
   text-align: center;
   flex-flow: column wrap;
-  max-width: 76%;
-  margin: 0 auto;
+  max-width: 66%;
 }
 
 form {
   text-align: left;
-  width: 66%;
+  width: 86%;
   margin: 0 auto;
+  padding: 2em;
 }
 
 .h2-class {
@@ -50,6 +72,10 @@ form {
   content: "";
   display: table;
   clear: both;
+}
+
+.member-name h2 {
+  letter-spacing: .03em;
 }
 
 .member-name input {
@@ -88,7 +114,8 @@ label[for="fighter"] {
 label[for="wizard"] {
   margin-right: 1.6em;
 }
-.addBtn {
+
+#addBtn {
   font-size: 1em;
   text-align: center;
   width: 25%;
@@ -101,13 +128,15 @@ label[for="wizard"] {
   transition: 0.3s;
 }
 
-.addBtn:hover {
+#addBtn:hover {
   background-color: #bbb;
 }
 
 #team-list {
   font-size: 1.2em;
-  margin-top: 1.2em;
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 1em;
 }
 
 ul {
